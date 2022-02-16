@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_ticket">
+
+    <fragment
+        android:id="@+id/nav_ticket"
+        android:name="com.example.smartmuseumapp.Ticketing.fragments.Ticketing"
+        android:label="@string/ticketing"
+        tools:layout="@layout/fragment_ticketing" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.smartmuseumapp.fragment.Events"
+        android:label="@string/events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.smartmuseumapp.fragment.Location"
+        android:label="@string/location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/nav_calander"
+        android:name="com.example.smartmuseumapp.fragment.Calander"
+        android:label="@string/calander"
+        tools:layout="@layout/fragment_calander" />
+
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.smartmuseumapp.fragment.Shop"
+        android:label="@string/shop"
+        tools:layout="@layout/fragment_shop" />
+
+
+    <fragment
+        android:id="@+id/nav_member"
+        android:name="com.example.smartmuseumapp.fragment.MembershipFragment"
+        android:label="@string/membership"
+        tools:layout="@layout/fragment_membership" />
+
+    <fragment
+        android:id="@+id/nav_donate"
+        android:name="com.example.smartmuseumapp.fragment.DonationFragment"
+        android:label="@string/donation"
+        tools:layout="@layout/fragment_donation" />
+
+    <fragment
+        android:id="@+id/nav_rateus"
+        android:name="com.example.smartmuseumapp.fragment.RateusFragment"
+        android:label="@string/rateus"
+        tools:layout="@layout/fragment_rateus" />
+
+
+
+</navigation>

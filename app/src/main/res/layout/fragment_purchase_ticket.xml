@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ticketing.fragments.Purchase_ticket">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#B00B0B0B"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Purchase Tickets"
+                android:textColor="#FBFAFA"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="277dp"
+                android:layout_height="51dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="name"
+                android:padding="10dp"
+                android:textColor="#070707"
+                android:textColorHint="#706868" />
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Select Date:"
+                android:textColor="#FBFAFA"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Select Time:"
+                android:textColor="#FBFAFA"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:focusable="false"
+                android:hint="00:00"
+                android:inputType="time"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Tickets"
+                android:textColor="#FBFAFA"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txttickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="Select Tickets:"
+                android:textColor="#FBFAFA"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="Adults       500Rs."
+                    android:textColor="#FBFAFA"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:padding="5dp"
+                    android:text="-"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn2"
+                    app:layout_constraintStart_toEndOf="@id/txtprice"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="+"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btn1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                </Button>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtprice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="Student     300Rs."
+                    android:textColor="#FBFAFA"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:padding="10dp"
+                    android:text="-"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn4"
+                    app:layout_constraintStart_toEndOf="@id/txtprice1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="+"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btn3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                </Button>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtmember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="Memeber  100Rs."
+                    android:textColor="#FBFAFA"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:padding="10dp"
+                    android:text="-"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn8"
+                    app:layout_constraintStart_toEndOf="@id/txtmember"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:width="120dip"
+                    android:text="+"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btn7"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                </Button>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/total_price"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:focusable="false"
+                android:hint="Rs.00"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:width="120dip"
+                android:text="PAYMENT"
+                android:backgroundTint="@color/design_default_color_error"/>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                android:visibility="invisible"
+                app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
